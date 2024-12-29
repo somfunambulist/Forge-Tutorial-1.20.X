@@ -13,6 +13,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> TWISTY_CARROT = ITEMS.register("twisty_carrot",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LEGGY_CARROT = ITEMS.register("leggy_carrot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARROT_BABY = ITEMS.register("carrot_baby",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

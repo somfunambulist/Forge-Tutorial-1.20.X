@@ -44,6 +44,8 @@ public class TutorialMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.TWISTY_CARROT);
+            event.accept(ModItems.LEGGY_CARROT);
+            event.accept(ModItems.CARROT_BABY);
         }
     }
 

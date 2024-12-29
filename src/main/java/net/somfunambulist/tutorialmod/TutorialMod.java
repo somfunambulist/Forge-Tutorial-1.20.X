@@ -45,7 +45,7 @@ public class TutorialMod {
     public void onServerStarting(ServerStartingEvent event)
     {
         // Do something when the server starts
-        LOGGER.info("HELLO from server starting. TEST.");
+        LOGGER.info("HELLO from server starting. CHANGES.");
     }
 
     //test

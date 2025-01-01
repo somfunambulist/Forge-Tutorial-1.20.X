@@ -12,11 +12,11 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
 
     public static final RegistryObject<Item> TWISTY_CARROT = ITEMS.register("twisty_carrot",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.TWISTY_CARROT)));
     public static final RegistryObject<Item> LEGGY_CARROT = ITEMS.register("leggy_carrot",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.TWISTY_CARROT)));
     public static final RegistryObject<Item> CARROT_BABY = ITEMS.register("carrot_baby",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.TWISTY_CARROT)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

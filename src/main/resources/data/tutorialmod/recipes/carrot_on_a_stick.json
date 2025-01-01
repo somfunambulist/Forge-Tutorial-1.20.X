@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:fishing_rod"
+    },
+    "X": [
+      {
+        "item": "tutorialmod:twisty_carrot"
+      },
+      {
+        "item": "tutorialmod:leggy_carrot"
+      },
+      {
+        "item": "tutorialmod:carrot_baby"
+      }
+    ]
+  },
+  "pattern": [
+    "# ",
+    " X"
+  ],
+  "result": {
+    "item": "minecraft:carrot_on_a_stick"
+  },
+  "show_notification": true
+}

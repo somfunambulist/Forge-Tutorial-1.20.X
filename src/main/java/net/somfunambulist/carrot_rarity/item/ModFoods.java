@@ -1,4 +1,4 @@
-package net.somfunambulist.tutorialmod.item;
+package net.somfunambulist.carrot_rarity.item;
 
 import net.minecraft.world.food.FoodProperties;
 

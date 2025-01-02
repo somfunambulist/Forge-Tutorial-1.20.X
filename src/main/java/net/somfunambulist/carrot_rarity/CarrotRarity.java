@@ -1,4 +1,4 @@
-package net.somfunambulist.tutorialmod;
+package net.somfunambulist.carrot_rarity;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -10,27 +10,26 @@ import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.somfunambulist.tutorialmod.item.ModCreativeModeTabs;
-import net.somfunambulist.tutorialmod.item.ModItems;
+//import net.somfunambulist.carrot_rarity.item.ModCreativeModeTabs;
+import net.somfunambulist.carrot_rarity.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(TutorialMod.MOD_ID)
-public class TutorialMod {
+@Mod(CarrotRarity.MOD_ID)
+public class CarrotRarity {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "tutorialmod";
+    public static final String MOD_ID = "carrot_rarity";
     // Directly reference a slf4j loggers
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public TutorialMod(FMLJavaModLoadingContext context)
+    public CarrotRarity(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
 
-        ModCreativeModeTabs.register(modEventBus);
+        //ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
 
@@ -46,9 +45,10 @@ public class TutorialMod {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            //event.accept(ModItems.TWISTY_CARROT);
-            //event.accept(ModItems.LEGGY_CARROT);
-            //event.accept(ModItems.CARROT_BABY);
+            event.accept(ModItems.TWISTY_CARROT);
+            event.accept(ModItems.LEGGY_CARROT);
+            event.accept(ModItems.CARROT_BABY);
+            event.accept(ModItems.HOLOGRAPHIC_CARROT_BABY);
         }
     }
 

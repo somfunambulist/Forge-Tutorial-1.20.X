@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "tutorialmod:item/carrot_baby"
+    "layer0": "carrot_rarity:item/leggy_carrot"
   }
 }

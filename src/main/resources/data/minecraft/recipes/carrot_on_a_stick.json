@@ -5,20 +5,9 @@
     "#": {
       "item": "minecraft:fishing_rod"
     },
-    "X": [
-      {
-        "item": "minecraft:carrot"
-      },
-      {
-        "item": "tutorialmod:twisty_carrot"
-      },
-      {
-        "item": "tutorialmod:leggy_carrot"
-      },
-      {
-        "item": "tutorialmod:carrot_baby"
-      }
-    ]
+    "X": {
+      "tag": "carrot_rarity:is_carrot"
+    }
   },
   "pattern": [
     "# ",

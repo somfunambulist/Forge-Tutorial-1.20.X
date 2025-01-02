@@ -63,27 +63,37 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "tutorialmod:twisty_carrot",
+              "name": "carrot_rarity:twisty_carrot",
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.2
+                  "chance": 0.15
                 }
               ]
             },
             {
               "type": "minecraft:item",
-              "name": "tutorialmod:leggy_carrot",
+              "name": "carrot_rarity:leggy_carrot",
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.05
+                  "chance": 0.022
                 }
               ]
             },
             {
               "type": "minecraft:item",
-              "name": "tutorialmod:carrot_baby",
+              "name": "carrot_rarity:carrot_baby",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.000244140625
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "carrot_rarity:holographic_carrot_baby",
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",

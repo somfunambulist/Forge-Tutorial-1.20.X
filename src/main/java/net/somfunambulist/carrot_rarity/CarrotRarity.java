@@ -48,7 +48,7 @@ public class CarrotRarity {
             event.accept(ModItems.TWISTY_CARROT);
             event.accept(ModItems.LEGGY_CARROT);
             event.accept(ModItems.CARROT_BABY);
-            event.accept(ModItems.HOLOGRAPHIC_CARROT_BABY);
+            //event.accept(ModItems.HOLOGRAPHIC_CARROT_BABY);
         }
     }
 
